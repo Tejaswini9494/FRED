@@ -50,7 +50,7 @@ export default function Sidebar() {
                 key={item.path} 
                 href={item.path}
               >
-                <a className={cn(
+                <div className={cn(
                   "flex items-center px-4 py-3 rounded-md group transition-all duration-200",
                   location === item.path 
                     ? "bg-white bg-opacity-25 shadow-sm text-white font-medium" 
@@ -58,7 +58,7 @@ export default function Sidebar() {
                 )}>
                   <i className={`fas fa-${item.icon} mr-3 w-5 text-center`}></i>
                   <span>{item.name}</span>
-                </a>
+                </div>
               </Link>
             ))}
           </nav>
