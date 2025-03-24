@@ -39,8 +39,8 @@ export default function Sidebar() {
 
   return (
     <div className="hidden md:flex md:flex-shrink-0">
-      <div className="flex flex-col w-64 bg-secondary-dark text-white">
-        <div className="flex items-center justify-center h-16 border-b border-gray-700">
+      <div className="flex flex-col w-64 bg-primary text-white">
+        <div className="flex items-center justify-center h-16 border-b border-gray-100 border-opacity-20">
           <h1 className="text-xl font-heading font-semibold">FinData Pipeline</h1>
         </div>
         <div className="flex flex-col flex-grow pt-5 overflow-y-auto">
@@ -51,24 +51,24 @@ export default function Sidebar() {
                 href={item.path}
               >
                 <a className={cn(
-                  "flex items-center px-4 py-3 text-white rounded-md group",
+                  "flex items-center px-4 py-3 rounded-md group transition-all duration-200",
                   location === item.path 
-                    ? "bg-primary" 
-                    : "hover:bg-primary hover:bg-opacity-20"
+                    ? "bg-white bg-opacity-25 shadow-sm text-white font-medium" 
+                    : "text-white hover:bg-white hover:bg-opacity-10"
                 )}>
-                  <i className={`fas fa-${item.icon} mr-3`}></i>
+                  <i className={`fas fa-${item.icon} mr-3 w-5 text-center`}></i>
                   <span>{item.name}</span>
                 </a>
               </Link>
             ))}
           </nav>
-          <div className="mt-auto p-4 border-t border-gray-700">
+          <div className="mt-auto p-4 border-t border-gray-100 border-opacity-20">
             <div className="flex items-center">
               <div className="ml-3">
                 <div className="text-sm font-medium text-white">System Status</div>
-                <div className="text-xs text-green-400">
+                <div className="text-xs text-green-300">
                   <span className="flex items-center">
-                    <span className="h-2 w-2 bg-green-400 rounded-full mr-1"></span>
+                    <span className="h-2 w-2 bg-green-300 rounded-full mr-1"></span>
                     All Systems Operational
                   </span>
                 </div>
