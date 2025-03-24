@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,7 @@ import { CalendarIcon, RefreshCcw } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { format } from "date-fns";
-import { apiRequest } from "@/lib/api";
+import { apiRequest, fetchIndicator } from "@/lib/api";
 
 interface MarketIndicatorProps {
   title: string;
@@ -42,25 +42,43 @@ function MarketIndicator({ title, value, change, isPositive, children }: MarketI
 export default function MarketOverview() {
   const [dateRange, setDateRange] = useState("30");
   const [date, setDate] = useState<Date | undefined>(new Date());
+  const [sp500Data, setSp500Data] = useState<any[]>([]);
+  const [dgs10Data, setDgs10Data] = useState<any[]>([]);
 
   const { data, isLoading, refetch } = useQuery({
     queryKey: ['/api/market/overview'],
   });
 
-  const handleRefresh = async () => {
-    await refetch();
+  useEffect(() => {
+    // Fetch historical data for the charts once the overview data is loaded
+    if (data?.data) {
+      fetchHistoricalData();
+    }
+  }, [data]);
+
+  const fetchHistoricalData = async () => {
+    try {
+      // Fetch S&P 500 data
+      const sp500Response = await fetchIndicator('SP500');
+      if (sp500Response.success && sp500Response.data.values) {
+        const values = sp500Response.data.values.slice(0, 30);
+        setSp500Data(values);
+      }
+      
+      // Fetch 10-Year Treasury Yield data
+      const dgs10Response = await fetchIndicator('DGS10');
+      if (dgs10Response.success && dgs10Response.data.values) {
+        const values = dgs10Response.data.values.slice(0, 30);
+        setDgs10Data(values);
+      }
+    } catch (error) {
+      console.error("Error fetching historical data:", error);
+    }
   };
 
-  // Get the data for specific series with historical values
-  const fetchSeriesData = async (series: string) => {
-    try {
-      const response = await apiRequest('GET', `/api/market/indicators/${series}`, undefined);
-      const data = await response.json();
-      return data.data;
-    } catch (error) {
-      console.error(`Error fetching data for ${series}:`, error);
-      return null;
-    }
+  const handleRefresh = async () => {
+    await refetch();
+    await fetchHistoricalData();
   };
 
   if (isLoading) {
