@@ -1,1 +1,6 @@
-# This file is intentionally left empty to make the directory a Python package
+# This file marks the directory as a Python package
+"""
+FastAPI Financial Market Data Pipeline Package
+
+This is the main package for the FastAPI backend application.
+"""

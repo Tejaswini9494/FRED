@@ -1,19 +1,25 @@
-from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any, Union
+"""
+Pydantic models for FastAPI.
+
+This module contains the data models used throughout the FastAPI application.
+These models are equivalent to the TypeScript types defined in shared/schema.ts.
+"""
+
+from pydantic import BaseModel
+from typing import Optional, List, Dict, Any
 from datetime import datetime
 
-
+# User models
 class User(BaseModel):
     id: int
     username: str
     password: str
 
-
 class InsertUser(BaseModel):
     username: str
     password: str
 
-
+# Indicator models
 class Indicator(BaseModel):
     id: int
     symbol: str
@@ -24,7 +30,6 @@ class Indicator(BaseModel):
     source: str
     lastUpdated: datetime
 
-
 class InsertIndicator(BaseModel):
     symbol: str
     name: str
@@ -34,20 +39,19 @@ class InsertIndicator(BaseModel):
     source: str
     lastUpdated: datetime
 
-
+# Value models
 class Value(BaseModel):
     id: int
     indicatorId: int
     date: datetime
     value: str
 
-
 class InsertValue(BaseModel):
     indicatorId: int
     date: datetime
     value: str
 
-
+# ETL Job models
 class EtlJob(BaseModel):
     id: int
     task: str
@@ -58,7 +62,6 @@ class EtlJob(BaseModel):
     error: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
 
-
 class InsertEtlJob(BaseModel):
     task: str
     status: str
@@ -68,7 +71,7 @@ class InsertEtlJob(BaseModel):
     error: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
 
-
+# Analysis Result models
 class AnalysisResult(BaseModel):
     id: int
     type: str  # 'correlation', 'forecast', etc.
@@ -77,7 +80,6 @@ class AnalysisResult(BaseModel):
     results: Dict[str, Any]
     createdAt: datetime
 
-
 class InsertAnalysisResult(BaseModel):
     type: str
     indicators: List[str]
@@ -85,7 +87,7 @@ class InsertAnalysisResult(BaseModel):
     results: Dict[str, Any]
     createdAt: datetime
 
-
+# API Response model
 class ApiResponse(BaseModel):
     success: bool
     data: Optional[Any] = None

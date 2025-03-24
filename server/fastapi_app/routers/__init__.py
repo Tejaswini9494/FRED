@@ -1,1 +1,6 @@
-# This file is intentionally left empty to make the directory a Python package
+# This file marks the directory as a Python package
+"""
+FastAPI Router Package
+
+This package contains the API routers for the FastAPI application.
+"""
