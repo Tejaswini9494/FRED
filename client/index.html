@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Market Data Pipeline</title>
+    <meta name="description" content="ETL pipeline for financial market data with analytics and visualization" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231976D2'%3E%3Cpath d='M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z'/%3E%3C/svg%3E" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      /* Custom CSS for specific chart shapes */
+      .clip-path-stocks {
+        clip-path: polygon(0 80%, 10% 75%, 20% 85%, 30% 65%, 40% 70%, 50% 60%, 60% 65%, 70% 50%, 80% 55%, 90% 45%, 100% 40%, 100% 100%, 0 100%);
+      }
+      .clip-path-treasury {
+        clip-path: polygon(0 60%, 5% 65%, 10% 60%, 15% 70%, 20% 65%, 25% 75%, 30% 70%, 35% 80%, 40% 75%, 45% 85%, 50% 80%, 55% 85%, 60% 80%, 65% 85%, 70% 80%, 75% 85%, 80% 75%, 85% 70%, 90% 65%, 95% 60%, 100% 55%, 100% 100%, 0 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
