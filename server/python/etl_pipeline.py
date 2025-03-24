@@ -26,7 +26,8 @@ class ETLPipeline:
     
     def extract(self, series_id, start_date=None, end_date=None):
         """Extract data from FRED API"""
-        print(f"Extracting data for {series_id} from FRED API")
+        import sys
+        sys.stderr.write(f"Extracting data for {series_id} from FRED API\n")
         
         # Get series data
         raw_data = self.fred_client.get_series_data(series_id, start_date, end_date)
@@ -38,7 +39,8 @@ class ETLPipeline:
     
     def transform(self, data):
         """Transform the extracted data"""
-        print("Transforming data")
+        import sys
+        sys.stderr.write("Transforming data\n")
         
         if not data or not data.get("data"):
             return data
@@ -61,7 +63,7 @@ class ETLPipeline:
                 })
             except ValueError:
                 # Skip invalid values
-                print(f"Skipping invalid value: {value_str}")
+                sys.stderr.write(f"Skipping invalid value: {value_str}\n")
         
         # Update the data with transformed values
         data["data"] = transformed_data
@@ -70,7 +72,8 @@ class ETLPipeline:
     
     def load(self, series_id, transformed_data):
         """Load transformed data (simulated - would write to database in production)"""
-        print(f"Loading transformed data for {series_id}")
+        import sys
+        sys.stderr.write(f"Loading transformed data for {series_id}\n")
         
         # In a real implementation, this would write to a database
         # For now, just return the data
@@ -86,7 +89,8 @@ class ETLPipeline:
     
     def run_pipeline(self, series_id, start_date=None, end_date=None):
         """Run the full ETL pipeline for a given series"""
-        print(f"Running ETL pipeline for {series_id}")
+        import sys
+        sys.stderr.write(f"Running ETL pipeline for {series_id}\n")
         
         try:
             # Extract
@@ -98,12 +102,12 @@ class ETLPipeline:
             # Load
             result = self.load(series_id, transformed_data)
             
-            print(f"ETL pipeline completed for {series_id}")
+            sys.stderr.write(f"ETL pipeline completed for {series_id}\n")
             
             return result
         
         except Exception as e:
-            print(f"Error in ETL pipeline: {str(e)}")
+            sys.stderr.write(f"Error in ETL pipeline: {str(e)}\n")
             return {"error": str(e)}
 
 

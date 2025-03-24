@@ -22,7 +22,9 @@ class FredApiClient:
         
     def get_series_data(self, series_id, start_date=None, end_date=None, frequency=None):
         """Get time series data for a specific FRED series ID"""
-        print(f"Fetching data for {series_id} from FRED API")
+        # Use stderr for debug messages instead of stdout to avoid breaking JSON output
+        import sys
+        sys.stderr.write(f"Fetching data for {series_id} from FRED API\n")
         
         # For testing purposes, generate simulated data
         data = self._generate_sample_data(series_id, start_date, end_date)
