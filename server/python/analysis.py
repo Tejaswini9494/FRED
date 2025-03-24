@@ -377,6 +377,7 @@ class FinancialAnalysis:
 
 def main():
     """Main function for command-line use"""
+    import sys  # Import sys at the beginning of the function
     parser = argparse.ArgumentParser(description="Financial Data Analysis")
     subparsers = parser.add_subparsers(dest="command", help="Analysis type")
     
@@ -420,7 +421,6 @@ def main():
         data = analysis.get_data(series_ids, args.start_date, args.end_date)
         result = analysis.compute_correlation_matrix(data)
         # Use write to stdout without extra newlines that print might add
-        import sys
         sys.stdout.write(json.dumps(result))
     
     elif args.command == "forecast":
@@ -463,7 +463,8 @@ def main():
     
     else:
         # Help output goes to stderr
-        parser.print_help(stderr=sys.stderr)
+        sys.stderr.write("Usage instructions:\n")
+        parser.print_help()
 
 
 if __name__ == "__main__":
