@@ -1,0 +1,87 @@
+Project Requirements: Financial Market Data Pipeline
+📍 1. Overview
+The Financial Market Data Pipeline is an ETL (Extract, Transform, Load) pipeline designed to fetch financial data from FRED API, process it using Python libraries, store it in MySQL, and visualize it using React (Plotly, Matplotlib, Visual-Structuring-Core).
+
+📍 2. Functional Requirements (FRs)
+1️⃣ Data Ingestion (ETL Process)
+Fetch financial market data from FRED API.
+
+Allow scheduled updates (daily/hourly) to keep data fresh.
+
+Store raw data in a MySQL database.
+
+2️⃣ Data Processing & Analysis
+Clean & transform the financial data (handle missing values, normalize, etc.).
+
+Perform statistical analysis (mean, variance, correlation).
+
+Implement time series forecasting using Statsmodels, SciPy, Lmfit.
+
+Cache frequently accessed data using Redis.
+
+3️⃣ API Development (FastAPI)
+Create RESTful APIs to:
+
+Retrieve financial data from MySQL.
+
+Fetch preprocessed & aggregated data for visualization.
+
+Provide real-time market trends.
+
+4️⃣ Data Visualization (React + Plotly)
+Build an interactive dashboard using React + Plotly to visualize:
+
+Historical trends of market data (line charts).
+
+Correlation between economic indicators (scatter plots).
+
+Moving Averages & Volatility (candlestick charts).
+
+Predictions based on time series models.
+
+5️⃣ Authentication & Security
+Implement API authentication (JWT or OAuth2).
+
+Secure database connections with SSL.
+
+Restrict API rate limits to prevent abuse.
+
+6️⃣ Deployment & Scalability
+Deploy backend on AWS EC2 using Docker.
+
+Use AWS RDS for MySQL database.
+
+Configure Nginx as API Gateway.
+
+Set up CI/CD pipelines for automatic deployment.
+
+📍 3. Non-Functional Requirements (NFRs)
+1️⃣ Performance & Scalability
+API response time should be < 200ms.
+
+Use Redis caching for frequently accessed data.
+
+Support parallel processing for data ingestion.
+
+2️⃣ Reliability & Fault Tolerance
+Implement error handling for API failures.
+
+Log requests & errors using structured logging (ELK, CloudWatch).
+
+3️⃣ Maintainability & Documentation
+Use clean architecture (separate layers for API, services, and DB).
+
+Provide Swagger/OpenAPI documentation for APIs.
+
+Write unit tests for core functionality.
+
+📍 4. Tech Stack
+Component	Technology
+Language	Python
+Data Source	FRED API (fredapi)
+Backend	FastAPI
+Database	MySQL (AWS RDS)
+Data Processing	Pandas, NumPy, SciPy, Statsmodels, Lmfit
+Caching	Redis
+Visualization	React, Plotly, Matplotlib, Visual-Structuring-Core
+Deployment	AWS (EC2, RDS, S3), Docker, Nginx
