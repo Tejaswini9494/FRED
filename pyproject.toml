@@ -5,6 +5,7 @@ description = "Add your description here"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115.12",
+    "google-auth-oauthlib>=1.2.1",
     "httpx>=0.28.1",
     "matplotlib>=3.10.1",
     "numpy>=2.2.4",
