@@ -62,11 +62,12 @@ app.use((req, res, next) => {
   }
 
   const port = 5002;
+  const host = "0.0.0.0";
   server.listen({
     port,
-    host: "0.0.0.0",
+    host,
     reusePort: true,
   }, () => {
-    log(`serving on port ${port}`);
+    log(`serving on ${host}:${port}`);
   });
 })();
