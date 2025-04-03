@@ -1,0 +1,99 @@
+Client will be available at: http://localhost:5173
+API requests will be proxied to: http://localhost:5002
+6:58:01 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v6.2.3  ready in 745 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://172.31.128.17:5173/
+  ➜  press h + enter to show help
+6:59:56 AM [vite] http proxy error: /api/market/indicator?symbol=SP500
+Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+7:00:01 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:03 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:06 AM [vite] http proxy error: /api/market/indicators/gdp?start_date=2022-01-01&end_date=2023-01-01&frequency=quarterly
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:13 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:23 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:00:32 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:33 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:00:44 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:00:54 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x3)
+7:01:02 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:01:04 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:01:15 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:01:26 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x3)
+7:01:32 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:01:36 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:01:46 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:01:56 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x3)
+7:02:02 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:02:07 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:02:17 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:02:27 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x3)
+7:02:33 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:02:38 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:02:48 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
+7:02:58 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x3)
+7:03:03 AM [vite] http proxy error: /api/status
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:03:09 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+7:03:19 AM [vite] http proxy error: /api/etl/jobs
+Error: connect ECONNREFUSED 127.0.0.1:5002
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) (x2)
