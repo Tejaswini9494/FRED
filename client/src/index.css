@@ -24,4 +24,13 @@
   .h-70\% {
     height: 70%;
   }
+  .border-border {
+    border-color: hsl(var(--border));
+  }
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+  .text-foreground {
+    color: theme("colors.gray.900"); /* Adjust as needed */
+  }
 }

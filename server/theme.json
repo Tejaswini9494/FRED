@@ -1,0 +1,10 @@
+{
+  "primary": "#1d4ed8",
+  "secondary": "#9333ea",
+  "background": "#ffffff",
+  "text": "#000000",
+  
+  "radius": 4,
+  "appearance": "light",
+  "variant": "professional"
+}

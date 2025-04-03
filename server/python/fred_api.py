@@ -16,7 +16,7 @@ from typing import Dict, List, Any, Optional
 class FredApiClient:
     """Client for interacting with the FRED API"""
     
-    def __init__(self, api_key=None):
+    def __init__(self, api_key="964a5f86a627ed7041815d81e16d24bc"):
         """Initialize with API key"""
         self.api_key = api_key or os.environ.get("FRED_API_KEY", "")
         
