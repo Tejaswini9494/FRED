@@ -30,12 +30,12 @@ export async function fetchMarketOverview() {
 
 export async function fetchIndicator(symbol: string, startDate?: string, endDate?: string, frequency?: string) {
   try {
-    let url = `/api/market/indicator?symbol=${encodeURIComponent(symbol)}`;
+    let url = `/api/market/indicators/${encodeURIComponent(symbol)}`;
     
     // Add query parameters if provided
-    if (startDate) url += `&start_date=${encodeURIComponent(startDate)}`;
-    if (endDate) url += `&end_date=${encodeURIComponent(endDate)}`;
-    if (frequency) url += `&frequency=${encodeURIComponent(frequency)}`;
+    if (startDate) url += `?start_date=${encodeURIComponent(startDate)}`;
+    if (endDate) url += `${startDate ? '&' : '?'}end_date=${encodeURIComponent(endDate)}`;
+    if (frequency) url += `${(startDate || endDate) ? '&' : '?'}frequency=${encodeURIComponent(frequency)}`;
     
     const response = await apiRequest('GET', url);
     return response.json();
