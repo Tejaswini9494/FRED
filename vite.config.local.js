@@ -32,6 +32,10 @@ export default defineConfig({
     host: true,
     port: 5173,
     strictPort: true,
+    // Add allowed host
+    hmr: {
+      host: '5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev'
+    },
     // Proxy API requests to the backend
     proxy: {
       '/api': {
