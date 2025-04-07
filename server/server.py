@@ -20,5 +20,5 @@ PORT = int(os.environ.get("PORT", 5000))
 
 # Main entry point
 if __name__ == "__main__":
-    print(f"Starting FastAPI server on port {PORT}")
-    uvicorn.run("fastapi_app.main:app", host="0.0.0.0", port=PORT, reload=True)
+    print(f"Starting FastAPI server on port 5000")
+    uvicorn.run("fastapi_app.main:app", host="0.0.0.0", port=5000, reload=True)
