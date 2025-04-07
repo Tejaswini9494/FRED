@@ -1,0 +1,85 @@
+~/workspace$ python server/server.py
+Starting FastAPI server on port 5000
+INFO:     Will watch for changes in these directories: ['/home/runner/workspace']
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1196] using StatReload
+INFO:     Started server process [1202]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     172.31.128.103:33748 - "GET / HTTP/1.1" 404 Not Found
+INFO:     10.82.9.110:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/analysis.py correlation --series GDP,CPIAUCSL,UNRATE,FEDFUNDS,SP500,DGS10
+INFO:     10.82.1.156:0 - "GET /api/analysis/correlation?series=GDP,CPIAUCSL,UNRATE,FEDFUNDS,SP500,DGS10 HTTP/1.1" 200 OK
+INFO:     10.82.4.51:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id GDP
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id UNRATE
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id CPIAUCSL
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id DGS10
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id SP500
+INFO:     10.82.1.156:0 - "GET /api/market/overview HTTP/1.1" 200 OK
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/analysis.py forecast --series GDP --model arima --periods 12
+INFO:     10.82.1.156:0 - "GET /api/analysis/forecast?series=GDP&model=arima&periods=12 HTTP/1.1" 200 OK
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id SP500
+INFO:     10.82.1.156:0 - "GET /api/market/indicators/SP500 HTTP/1.1" 200 OK
+Running command: /home/runner/workspace/.pythonlibs/bin/python /home/runner/workspace/server/python/fred_api.py get_series --series_id DGS10
+INFO:     10.82.1.156:0 - "GET /api/market/indicators/DGS10 HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.1.156:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/etl/jobs HTTP/1.1" 200 OK
+INFO:     10.82.0.68:0 - "GET /api/status HTTP/1.1" 307 Temporary Redirect

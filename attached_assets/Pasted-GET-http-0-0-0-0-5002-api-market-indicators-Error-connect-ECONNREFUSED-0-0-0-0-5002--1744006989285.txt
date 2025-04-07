@@ -1,0 +1,539 @@
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "d3965c02-7ef2-4d44-b4eb-3403b8d2919e",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "4f88a68b-d143-4faa-8091-e3f6175e386a",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "bd34638c-c1d9-426f-9333-5d29cdf4443d",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "e7ec4edc-f73d-4e4c-82df-f1fe2dd0b867",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "55c2624f-a66e-45f1-b5ee-9f747dff635a",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "b349dca9-4201-4b40-8baa-15ba0c805b9b",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "b04a4989-7122-4b95-90f3-c4ced72a51c2",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "9a5c73b4-44e1-4350-8827-2cad9cb0332a",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "97b76a6a-b623-46fc-839c-03586321c327",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "e5b59b34-140a-4aa3-92a8-081c26ef0b7b",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "6d242b75-24ec-47a8-a799-4ab9784324e6",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "ed85d8dc-bcc6-4275-b1a8-b129f1ed956c",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "fecdd090-2831-47ad-8fb0-c692305d8ce9",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "7f8d7269-eeae-4d09-8eab-96445810dfd7",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "57ec994b-6ae2-486f-8711-4108fa9a817e",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "527778fc-187a-4b48-af6f-050d7817ec58",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:500/api/market/indicators0: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:500",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "4ef4387d-df2d-421d-9c0f-59e6db9ae2f2",
+    "host": "0.0.0.0:500",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:500/api/market/indicators0: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:500",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "53338f64-875b-4baa-b28f-196442b282f1",
+    "host": "0.0.0.0:500",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators0: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "8cc1e128-36df-446a-966f-ee22f13672b8",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "517f79c5-d941-4a63-a272-77fd561ac5cb",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "9359b033-8320-4058-bee9-b25d4e32cbe7",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "656155ce-fa9e-42c9-8045-9c39ffa9e45f",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "430681cf-ae84-46fe-ac2b-16c834366a7d",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "968fac15-1e5b-40e3-9fdb-0da4d0649b3a",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "12a85780-c00d-4a99-8ee9-f44bef121938",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "7a81f7c9-f350-4a5b-ace4-68fa1a2765fb",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002//api/market/indicators/SP500: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "c7a4e5cc-7b62-4fe3-a8ee-2042da416d11",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002//api/market/indicators/SP500: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "b859f7be-069b-40eb-bce2-f8012a777b98",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002//api/market/indicators/SP500: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "49be0841-469f-492c-a1c3-4ed8d6b4ea27",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators/SP500: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "6acaf7c3-8604-4db7-8424-3f1b003d8109",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators/SP500: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "edca023b-b2df-4cef-8a75-7d6269660d5e",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "b7ccfbd9-bc3f-4fb1-8a93-5e3d4386f063",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "c7ea190c-d29f-4f15-acea-a036bbf98795",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "48aeca1f-ec93-4030-a001-3864cb01ad1a",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "d2eeb52f-a95c-40c4-9d8b-3a4ac4e77bcb",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.43.2",
+    "accept": "*/*",
+    "postman-token": "fc5d8704-f474-4426-8eb4-49038cfe32cb",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "3c7b6024-0417-4ba2-9870-86907c0a8d2e",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "590dc271-bb0c-44ef-8272-15134a0a117a",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "98f7be1e-663a-48fe-a772-acec059d1219",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "59e25f5e-3b95-4a42-876a-a5ba234f49ca",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://localhost:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 127.0.0.1:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "196b23a8-1d07-454e-a959-4d4ab6d5bc25",
+    "host": "localhost:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5000/api/status: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5000",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "376e2c4b-564a-4045-a539-241b712e6416",
+    "host": "0.0.0.0:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/status: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "cf787747-1c4b-4c0a-bfa3-59dd426db60d",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/status: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "8b7f1fee-b9b9-478d-abaa-2c3e58978670",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/status: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "8895e088-1731-40d7-9c45-d7175c5f9e02",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/overview: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "f9d275c4-118c-440b-9b99-058d0d144e65",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/market/indicators/GDP: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "39ec0030-22c0-4b8e-adf0-470694c55b70",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
+GET http://0.0.0.0:5002/api/analysis/correlation?series=GDP,CPIAUCSL,UNRATE,FEDFUNDS,SP500,DGS10: {
+  "Error": "connect ECONNREFUSED 0.0.0.0:5002",
+  "Request Headers": {
+    "accept": "application/json",
+    "fred_api_key": "964a5f86a627ed7041815d81e16d24bc",
+    "user-agent": "PostmanRuntime/7.43.2",
+    "postman-token": "8b32f953-c303-447c-9211-5e9177645cab",
+    "host": "0.0.0.0:5002",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  }
+}
