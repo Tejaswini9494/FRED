@@ -1,4 +1,4 @@
-import { Link, useLocation } from "wouter";
+import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "../../lib/utils";
 
 const navItems = [
@@ -35,7 +35,8 @@ const navItems = [
 ];
 
 export default function Sidebar() {
-  const [location] = useLocation();
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   return (
     <div className="flex md:flex md:flex-shrink-0">
@@ -46,20 +47,19 @@ export default function Sidebar() {
         <div className="flex flex-col flex-grow pt-5 overflow-y-auto">
           <nav className="flex-1 px-2 pb-4 space-y-1">
             {navItems.map((item) => (
-              <Link 
+              <NavLink 
                 key={item.path} 
-                href={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  cn(
+                    "flex items-center px-4 py-3 rounded-md group transition-all duration-200",
+                    isActive ? "bg-gray-100 shadow-sm text-gray-900 font-medium" : "text-gray-700 hover:bg-gray-50"
+                  )
+                }
               >
-                <div className={cn(
-                  "flex items-center px-4 py-3 rounded-md group transition-all duration-200",
-                  location === item.path 
-                    ? "bg-gray-100 shadow-sm text-gray-900 font-medium" 
-                    : "text-gray-700 hover:bg-gray-50"
-                )}>
-                  <i className={`fas fa-${item.icon} mr-3 w-5 text-center`}></i>
-                  <span>{item.name}</span>
-                </div>
-              </Link>
+                <i className={`fas fa-${item.icon} mr-3 w-5 text-center`}></i>
+                <span>{item.name}</span>
+              </NavLink>
             ))}
           </nav>
           <div className="mt-auto p-4 border-t border-gray-100 border-opacity-20">
