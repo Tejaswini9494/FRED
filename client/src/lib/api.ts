@@ -15,7 +15,12 @@ export async function apiRequest(
 
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`${res.status}: ${text || res.statusText}`);
+    try {
+      const errorData = JSON.parse(text);
+      throw new Error(errorData.error || `${res.status}: ${res.statusText}`);
+    } catch {
+      throw new Error(`${res.status}: ${text || res.statusText}`);
+    }
   }
   
   return res;

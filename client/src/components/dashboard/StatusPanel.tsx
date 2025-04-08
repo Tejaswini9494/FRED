@@ -58,11 +58,12 @@ export default function StatusPanel() {
   }
 
   if (error) {
+    const errorMessage = error instanceof Error ? error.message : 'Failed to fetch';
     return (
       <div className="mb-6">
         <Card className="border-red-200 bg-red-50">
           <CardContent className="p-4">
-            <p className="text-red-500">Error loading system status: {(error as Error).message}</p>
+            <p className="text-red-500">Error loading system status: {errorMessage}</p>
           </CardContent>
         </Card>
       </div>
