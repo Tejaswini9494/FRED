@@ -16,7 +16,7 @@ from pathlib import Path
 from fastapi_app.main import app
 
 # Set port from environment or default
-PORT = int(os.environ.get("PORT", 5002))
+PORT = int(os.environ.get("PORT", 5000))
 
 # Main entry point
 if __name__ == "__main__":
