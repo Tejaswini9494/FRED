@@ -1,0 +1,51 @@
+[vite] connecting...
+Failed to fetch system status: 
+TypeError {}
+
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
+[vite] connected.
+Failed to fetch
+Failed to fetch indicator SP500: 
+TypeError {}
+
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
+Error fetching historical data: 
+TypeError {}
+
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
+Failed to fetch
+at window.fetch (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)
+at apiRequest (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/lib/api.ts:3:21)
+at fetchIndicator (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/lib/api.ts:35:28)
+at fetchHistoricalData (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/components/dashboard/MarketOverview.tsx:95:35)
+at https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/components/dashboard/MarketOverview.tsx:90:7
+at commitHookEffectListMount (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-SXRIVT2P.js?v=ce87187c:16963:34)
+at commitPassiveMountOnFiber (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-SXRIVT2P.js?v=ce87187c:18206:19)
+at commitPassiveMountEffects_complete (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-SXRIVT2P.js?v=ce87187c:18179:17)
+at commitPassiveMountEffects_begin (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-SXRIVT2P.js?v=ce87187c:18169:15)
+at commitPassiveMountEffects (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-SXRIVT2P.js?v=ce87187c:18159:11)
+Failed to fetch system status: 
+TypeError {}
+
+Failed to fetch
+Failed to fetch system status: 
+TypeError {}
+
+Failed to fetch
+Failed to fetch system status: 
+TypeError {}
+
+Failed to fetch
+Failed to fetch system status: 
+TypeError {}
+
+Failed to fetch
