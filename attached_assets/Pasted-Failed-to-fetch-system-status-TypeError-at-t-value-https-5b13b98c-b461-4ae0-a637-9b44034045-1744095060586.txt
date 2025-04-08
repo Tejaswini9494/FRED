@@ -1,0 +1,18 @@
+Failed to fetch system status: 
+TypeError {}
+
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
+Failed to fetch
+at window.fetch (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)
+at apiRequest (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/lib/api.ts?t=1744094891044:10:21)
+at fetchSystemStatus (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/src/lib/api.ts?t=1744094891044:76:28)
+at Object.fetchFn [as fn] (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:842:14)
+at run (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:493:49)
+at Object.start (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:535:9)
+at _a4.fetch (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:929:41)
+at _a9.executeFetch_fn (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:2247:51)
+at _a9.onSubscribe (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:1934:74)
+at _a9.subscribe (https://5b13b98c-b461-4ae0-a637-9b440340453f-00-2vmnehdxb25fq.kirk.replit.dev:5173/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=ce87187c:24:10)
