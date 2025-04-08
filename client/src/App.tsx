@@ -19,15 +19,15 @@ function AppRouter() {
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header />
         <main className="flex-1 overflow-y-auto p-6 bg-neutral-100">
-        
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/pipeline" element={<DataPipeline />} />
-        <Route path="/analysis" element={<Analysis />} />
-        <Route path="/configuration" element={<Configuration />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/pipeline" element={<DataPipeline />} />
+            <Route path="/analysis" element={<Analysis />} />
+            <Route path="/configuration" element={<Configuration />} />
+            <Route path="/history" element={<NotFound />} />
+            <Route path="/logs" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </main>
       </div>
     </div>
