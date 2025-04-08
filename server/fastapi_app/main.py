@@ -13,10 +13,10 @@ from .routers import market, etl, analysis, status
 # Create FastAPI app
 app = FastAPI(title="Financial Market Data Pipeline API")
 
-# Add CORS middleware
+# Add CORS middleware - updated for production.  Consider a more restrictive allow_origins list.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update for production
+    allow_origins=["http://localhost:3000", "your_production_origin"], #Update with your allowed origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -36,11 +36,11 @@ async def generic_exception_handler(request: Request, exc: Exception):
     """
     error_detail = str(exc)
     status_code = 500
-    
+
     if isinstance(exc, HTTPException):
         status_code = exc.status_code
         error_detail = exc.detail
-    
+
     return JSONResponse(
         status_code=status_code,
         content={
@@ -61,3 +61,5 @@ async def health_check() -> Dict[str, Any]:
 client_build_dir = Path(__file__).parent.parent.parent / "client" / "dist"
 if client_build_dir.exists():
     app.mount("/", StaticFiles(directory=str(client_build_dir), html=True), name="static")
+
+#TODO: Update the client-side code to use the correct API endpoint URL.  The current URL ("https://0.0.0.0:5000/api/status/") might be incorrect.
