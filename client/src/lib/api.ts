@@ -6,9 +6,18 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
-  const res = await fetch(`${API_BASE}${url}`, {
+  const headers: Record<string, string> = {
+    'Accept': 'application/json',
+    'FRED_API_KEY': '964a5f86a627ed7041815d81e16d24bc'
+  };
+  
+  if (data) {
+    headers['Content-Type'] = 'application/json';
+  }
+
+  const res = await fetch(`${API_BASE}${url.replace('/api', '')}`, {
     method,
-    headers: data ? { "Content-Type": "application/json" } : {},
+    headers,
     body: data ? JSON.stringify(data) : undefined,
     credentials: "include",
   });
