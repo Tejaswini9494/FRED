@@ -39,7 +39,7 @@ export default function Sidebar() {
 
   return (
     <div className="flex md:flex md:flex-shrink-0">
-      <div className="flex flex-col w-64 bg-primary text-white shadow-lg">
+      <div className="flex flex-col w-64 bg-white shadow-lg">
         <div className="flex items-center justify-center h-16 border-b border-gray-100 border-opacity-20">
           <h1 className="text-xl font-heading font-semibold">FinData Pipeline</h1>
         </div>
@@ -53,8 +53,8 @@ export default function Sidebar() {
                 <div className={cn(
                   "flex items-center px-4 py-3 rounded-md group transition-all duration-200",
                   location === item.path 
-                    ? "bg-white bg-opacity-25 shadow-sm text-white font-medium" 
-                    : "text-white hover:bg-white hover:bg-opacity-10"
+                    ? "bg-gray-100 shadow-sm text-gray-900 font-medium" 
+                    : "text-gray-700 hover:bg-gray-50"
                 )}>
                   <i className={`fas fa-${item.icon} mr-3 w-5 text-center`}></i>
                   <span>{item.name}</span>
