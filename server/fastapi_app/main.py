@@ -13,10 +13,10 @@ from .routers import market, etl, analysis, status
 # Create FastAPI app
 app = FastAPI(title="Financial Market Data Pipeline API")
 
-# Add CORS middleware - updated for production.  Consider a more restrictive allow_origins list.
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "your_production_origin"], #Update with your allowed origins
+    allow_origins=["http://0.0.0.0:5173", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
