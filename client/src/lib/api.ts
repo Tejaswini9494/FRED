@@ -1,3 +1,15 @@
+
+export async function fetchSystemStatus() {
+  try {
+    const response = await apiRequest('GET', '/api/status');
+    return response.json();
+  } catch (error) {
+    console.error('Failed to fetch system status:', error);
+    throw error;
+  }
+}
+
+
 const API_BASE = 'http://0.0.0.0:5002';
 
 export async function apiRequest(

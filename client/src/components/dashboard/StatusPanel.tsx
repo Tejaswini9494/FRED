@@ -1,6 +1,8 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
+import { fetchSystemStatus } from "@/lib/api";
 
 interface StatusCardProps {
   title: string;
@@ -32,8 +34,9 @@ function StatusCard({ title, status, subtext, isActive = true }: StatusCardProps
 
 export default function StatusPanel() {
   const { data, isLoading, error } = useQuery({
-    queryKey: ['/api/status'],
-    refetchInterval: 30000 // Refresh every 30 seconds
+    queryKey: ['systemStatus'],
+    queryFn: fetchSystemStatus,
+    refetchInterval: 30000
   });
 
   if (isLoading) {
@@ -59,7 +62,7 @@ export default function StatusPanel() {
       <div className="mb-6">
         <Card className="border-red-200 bg-red-50">
           <CardContent className="p-4">
-            <p className="text-red-500">Error loading system status: {error.message}</p>
+            <p className="text-red-500">Error loading system status: {(error as Error).message}</p>
           </CardContent>
         </Card>
       </div>
@@ -68,7 +71,6 @@ export default function StatusPanel() {
 
   const statusData = data?.data;
   
-  // Format relative time (e.g., "10 minutes ago")
   const formatRelativeTime = (timestamp: string) => {
     if (!timestamp) return "N/A";
     
