@@ -85,6 +85,7 @@ export async function fetchEtlJobs(limit?: number) {
 export async function fetchSystemStatus() {
   try {
     const response = await apiRequest('GET', '/api/status');
+    console.log("respinse is", response)
     return response.json();
   } catch (error) {
     console.error('Failed to fetch system status:', error);
