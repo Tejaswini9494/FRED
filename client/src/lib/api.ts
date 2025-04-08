@@ -1,5 +1,5 @@
 
-const API_BASE = 'http://0.0.0.0:5000/api';
+const API_BASE = `${window.location.protocol}//${window.location.hostname}:5000`;
 
 export async function apiRequest(
   method: string,
