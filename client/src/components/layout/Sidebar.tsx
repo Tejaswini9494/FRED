@@ -38,8 +38,8 @@ export default function Sidebar() {
   const [location] = useLocation();
 
   return (
-    <div className="hidden md:flex md:flex-shrink-0">
-      <div className="flex flex-col w-64 bg-primary text-white">
+    <div className="flex md:flex md:flex-shrink-0">
+      <div className="flex flex-col w-64 bg-primary text-white shadow-lg">
         <div className="flex items-center justify-center h-16 border-b border-gray-100 border-opacity-20">
           <h1 className="text-xl font-heading font-semibold">FinData Pipeline</h1>
         </div>

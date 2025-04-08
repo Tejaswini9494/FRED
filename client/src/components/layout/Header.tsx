@@ -13,13 +13,6 @@ export default function Header() {
   
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
-    
-    // Toggle the sidebar visibility on mobile
-    const sidebar = document.querySelector('.md\\:flex-shrink-0');
-    if (sidebar) {
-      sidebar.classList.toggle('hidden');
-      sidebar.classList.toggle('flex');
-    }
   };
   
   return (
